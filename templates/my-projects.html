@@ -1,0 +1,15 @@
+<employer-head ng-hide="currentUser.acctype === 'Student'"></employer-head>
+<student-head ng-hide="currentUser.acctype === 'Employer'"></student-head>
+<div class="page-h1-header">
+  <h1 ng-hide="currentUser.acctype === 'Student'">{{currentUser.lastname}}'s Projects<h1>
+  <h1 ng-hide="currentUser.acctype === 'Employer'">{{currentUser.name}}'s Portfolio<h1>
+</div>
+<section class="my-project-section">
+  <h1 ng-hide="currentUser.projectData[0]" class="no-projects" >You dont have any projects yet!</h1>
+  <div class="my-project-post" ng-repeat="post in currentUser.projectData" activity-tags>
+    <div class="project-post-img" style="background: url('{{post.image}}');background-size:cover;background-position:center center; background-repeat:no-repeat;"></div>
+    <h3>{{post.title}}</h3>
+    <p>{{post.disc}}</p>
+    <button class="discover-btn-small">View {{post.type}}</button>
+  </div>
+</section>

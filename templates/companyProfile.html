@@ -1,0 +1,51 @@
+<employer-head></employer-head>
+<div ng-controller="mainController">
+<section class="user-profile-section">
+<section class="user-profile-head">
+  <div class="profile-picture" style="background: url('{{currentUser.profileimage}}'); background-size:cover; background-position: center center;">
+    <button class="change-profile-img" ng-click="newProfileimg()">Change</button>
+  </div>
+  <div class="user-profile-crossection">
+    <div class="user-stats-info">
+      <h1> {{currentUser.lastname}}</h1>
+      <div class="h-three-badges-div">
+        <h3 class="h-three-badges">{{currentUser.acctype}}</h3>
+        </div>
+      <h3>Projects Uploaded:<span> {{currentUser.projectNumber}}</span></h3>
+      <h3 class="githubH3">Linkedin: <span> {{currentUser.gitrepos}}</span><a href="/auth/linkedin"><button id="githubConnect">Connect Linkedin</button></a></h3>
+    </div>
+    <section class="user-profile-bio">
+      <h2>About {{currentUser.lastname}}</h2>
+      <p>{{currentUser.userbio}}</p><br>
+      <textarea placeholder="Tell us about yourself...  "id="newUserBio">{{currentUser.userbio}}</textarea><br>
+      <button class="change-user-bio" ng-click="newUserBio()">Change</button>
+      <button class="save-user-bio" ng-click="saveUserBio()">Save</button>
+    </section>
+  </div>
+</section>
+<section class="user-activity-header">
+  <div class="user-search-section">
+    <h2>Who are you hiering?</h2>
+    <p>Search by catigory or keyword</p>
+    <div>
+      <button class="discover-btn">Frontend Designer</button>
+      <button class="discover-btn">Backend Develpoer</button>
+      <button class="discover-btn">Project Management</button>
+    </div>
+    <input type="text" placeholder="Search..." class="user-search"></input>
+      <!-- <div class="user-search-btn" ui-sref="searchresults"></div> -->
+
+  </div>
+  <div class="choose-timeline-state">
+    <button ui-sref="companyProfile.newsfeed">NewsFeed</button>
+    <button ui-sref="companyProfile.timeline"> Timeline</button>
+  </div>
+</section>
+<section class="user-activity-timeline">
+  <ui-view>
+  </ui-view>
+
+</section>
+
+</section>
+</div>

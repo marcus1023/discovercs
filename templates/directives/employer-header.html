@@ -1,0 +1,30 @@
+<div class="top-spacer"></div>
+<div class="company-profile-navbar">
+  <img ui-sref="home" src="img/discover-logo.png">
+  <ul>
+    <li ui-sref="companyProfile.timeline">Profile</li>
+    <li ng-click="dropdownAnimateProjects()"> Projects</li>
+    <li ng-click="dropdownAnimateStudents()">Students</li>
+    <li ui-sref="inbox.messages" id="user-inbox-li">
+      <div class="user-inbox-button">Inbox<div ng-hide="!currentUser.messageNum">{{currentUser.messageNum}}</div></div>
+    </li>
+    <li ng-click="signOut()" >Sign Out </li>
+  </ul>
+</div>
+<div class="blue-nav">
+  <div class="blue-nav-projects">
+    <ul>
+      <li ui-sref="newProject">New Project</li>
+      <li ui-sref="myProjects" >My Projects </li>
+      <li ui-ssref="signin" >Premade </li>
+      <li ui-ssref="signin" >Submited </li>
+    </ul>
+  </div>
+  <div class="blue-nav-students">
+    <ul>
+      <li ui-sref="studentLineup">All Students</li>
+      <li ui-sref="savedUsers" >Saved Students </li>
+      <li ui-ssref="signin" style="color: rgba(0,0,0, .3);" >Saved Pieces </li>
+    </ul>
+  </div>
+</div>

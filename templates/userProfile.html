@@ -1,0 +1,45 @@
+<div ng-controller="mainController">
+<section class="user-profile-section">
+<student-head></student-head>
+<section class="user-profile-head">
+  <div class="profile-picture" style="background: url('{{currentUser.profileimage}}'); background-size:cover; background-position: center center;">
+    <button class="change-profile-img" ng-click="newProfileimg()">Change</button>
+  </div>
+  <div class="user-profile-crossection">
+    <div class="user-stats-info">
+      <h1> {{currentUser.name}} {{currentUser.lastname}}</h1>
+      <div class="h-three-badges-div">
+        <h3 class="h-three-badges">{{currentUser.acctype}}</h3>
+        </div>
+      <h3>Projects Completed:<span>0 {{currentUser.ProjectsCompleted}}</span></h3>
+      <h3 class="githubH3">Github Repos: <span> {{currentUser.gitrepos}}</span><button id="githubConnect" ui-sref="githubConnect">Connect github</button></h3>
+    </div>
+    <section class="user-profile-bio">
+      <h2>About {{currentUser.name}}</h2>
+      <p>{{currentUser.userbio}}</p><br>
+      <textarea placeholder="Tell us about yourself...  "id="newUserBio">{{currentUser.userbio}}</textarea><br>
+      <button class="change-user-bio" ng-click="newUserBio()">Change</button>
+      <button class="save-user-bio" ng-click="saveUserBio()">Save</button>
+    </section>
+  </div>
+</section>
+<section class="user-activity-header">
+  <div class="user-progress-section">
+    <h3 class="progress-title">Class Progress: 87{{currentUser.progress}}%</h3><br>
+    <div class="current-user-progress">
+      <div style="width: {{87}}%"></div>
+    </div>
+  </div>
+  <div class="choose-timeline-state">
+    <button ui-sref="userprofile.newsfeed">NewsFeed</button>
+    <button ui-sref="userprofile.timeline"> Timeline</button>
+  </div>
+</section>
+<section class="user-activity-timeline">
+  <ui-view>
+  </ui-view>
+
+</section>
+
+</section>
+</div>

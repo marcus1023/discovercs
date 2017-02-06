@@ -1,0 +1,9 @@
+<div class="inbox-options">
+  <div ui-sref="inbox.messages" >Messages</div>
+  <div ui-sref="inbox.contacts" style="background: #2AABE2; color: white;" >Contacts</div>
+</div>
+<div class="inbox-single-student" ng-repeat="student in currentUser.fullSavedUsers" ng-click="loadUserMessages(student.id, currentUser.id)">
+  <div class="inbox-student-image" style="background: url('{{student.profileimage}}'); background-position: center; background-size: cover;"></div>
+  <div>{{student.name}} {{student.lastname}}</div>
+  <div ng-click="goToStudent(student.id)" id="inbox-profile-connect">Profile<div>
+</div>

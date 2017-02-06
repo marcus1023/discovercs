@@ -1,0 +1,110 @@
+.student-lineup-section{
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.student-lineup-section h1{
+  margin: 20px 0 0 0;
+}
+.student-lineup-current{
+  margin: 20px;
+}
+.student-lineup-past{
+  margin: 20px;
+}
+.single-student{
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(42,	171,	226, .5);
+  width: 250px;
+  margin: 20px 20px;
+  height: auto;
+  min-height: 200px;
+  transition: all 1s;
+}
+.single-student-image{
+  width: 180px;
+  height: 160px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.inbox-single-student{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #2AABE2;
+  transition: all .5s;
+}
+.inbox-single-student:hover{
+  background: rgba(42,	171,	226, .1);
+}
+.inbox-student-image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+#inbox-profile-connect{
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  font-size: .8rem;
+  background: #2AABE2;
+  padding: 3px 8px;
+  color: white;
+  opacity: .8;
+  border-bottom: 1px solid rgba(0,0,0, .0)
+}
+#inbox-profile-connect:hover{
+  opacity: 1;
+  border-bottom: 1px solid rgba(0,0,0, .4)
+}
+.student-quick-view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  text-align: center;
+  border-top: 1px solid rgba(0,0,0, .2);
+  border-bottom: 1px solid rgba(0,0,0, .2);
+  font-size: .8rem;
+  font-weight: 400;
+  margin: 8px 10px 10px 10px;
+  padding: 3px;
+  transition: all 1s;
+}
+.student-quick-view:hover{
+  background: rgba(0,0,0, .05)
+}
+.student-quick-view img{
+  margin: 3px 0 0 5px;
+  width: 15px;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+.student-lineup-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.student-lineup-container h1{
+margin: 20px 0 0 0;
+}
+.student-lineup-current{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

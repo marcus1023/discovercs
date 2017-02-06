@@ -1,0 +1,204 @@
+@media screen and (max-width: 480px) {
+  .user-activity-timeline{
+    padding: 0px;
+    width: 100%;
+  }
+  .activity-feed-title{
+    /*text-align: center;*/
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 0px;
+  }
+  .user-activity-post{
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+  }
+  .activity-post-id{
+    right: 10px;
+    top: -8px;
+  }
+  .user-activity-info h3{
+    font-size: 2rem;
+    padding: 5px 10px;
+    text-align: center;
+  }
+  .user-activity-info p{
+    /*font-size: 2rem;
+    padding: 5px 10px;*/
+    text-align: center;
+  }
+  .user-activity-info{
+    width: 250px;
+  }
+  .user-activity-command{
+    width: 100%;
+  }
+
+  .user-activity-tags{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-activity-tags span{
+    padding: 2px;
+  }
+  .tag-spacer{
+    display: none;
+  }
+  #activity-tag-title{
+    margin: 0 0 5px 0;
+  }
+  .nav-bar{
+    display: none;
+  }
+  .user-stats-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.user-stats-info {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+.githubH3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center !important;
+}
+.h-three-badges-div {
+    border-bottom: 1px solid rgba(0,0,0, .05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.activity-feed-title{
+      margin: 0 0 10px -60px;
+      letter-spacing: 1rem;
+      border-bottom: 1px solid rgba(0,0,0, .3);
+  font-weight: 500;
+  font-size: 2rem;
+  opacity: .4;
+  z-index: 0 !important;
+  display: none;
+}
+student-head{
+  display: none;
+}
+employer-head{
+  display: none;
+}
+.user-activity-post {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85vw;
+    margin: 0 0 15px 28px;
+}
+.user-progress-section {
+    margin: 10px 0 10px 0;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.progress-title {
+    display: flex;
+    margin: 0 0 5px 0;
+    width: auto;
+}
+.user-profile-bio {
+    position: relative;
+    /* background: rgba(0,0,0, .03); */
+    border-radius: 5px;
+    box-shadow: -2px 2px 2px rgba(0,0,0, .2);
+    border: 1px solid rgba(0,0,0, .2);
+    margin: 0 0 0 0px;
+    width: 120%;
+    height: auto;
+    max-height: 160px;
+}
+.user-activity-info {
+    width: 250px;
+    margin: 0 0 0 17px;
+}
+.choose-timeline-state button {
+    margin: 10px 10px;
+}
+.choose-timeline-state {
+    margin: 0 0 15px;
+}
+.create-profile-section h2 {
+    font-size: 4.3rem;
+    opacity: .5;
+    margin: 0px 0 20px 0;
+    text-align: center;
+}
+.lineup-parallax-overlay h1 {
+    font-size: 2rem;
+    border-bottom: 1px solid white;
+    /* margin: 0 0 0 10%; */
+}
+.lineup-parallax-overlay h2 {
+    font-size: 1rem;
+    letter-spacing: .4rem;
+    /* margin: 0 0 0 10%; */
+}
+.lineup-class-parallax{
+  background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  position: relative;
+}
+.lineup-parallax-overlay{
+  background: rgba(0,0,0, .3);
+  font-weight: 300;
+  position: absolute;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}
+.user-search-section h2 {
+    letter-spacing: .0rem;
+}
+.user-search-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    margin-bottom: 30px;
+}
+}
+@media screen and (max-width: 780px) {
+  .user-profile-head{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    padding: 20px 20px 80px 20px;
+    border-bottom: 2px solid rgba(0,0,0, .1);
+  }
+  .user-profile-crossection{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 0px 20px;
+  }
+  .user-stats-info{
+    width: 100%;
+  }
+}

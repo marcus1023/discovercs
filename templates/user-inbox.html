@@ -1,0 +1,22 @@
+<student-head ng-hide="currentUser.acctype === 'Employer'"></student-head>
+<employer-head ng-hide="currentUser.acctype === 'Student'"></employer-head>
+<section class="user-inbox-section">
+  <div class="user-inbox-container">
+    <div class="messages">
+      <ui-view></ui-view>
+    </div>
+    <div class="terminal">
+      <div class="inbox-message-view">
+        <h3 ng-hide="!currentUser.connectMessageUser" id="connectMessageUser-title">Messages from {{currentUser.connectMessageUser.name}} {{currentUser.connectMessageUser.lastname}}</h3>
+        <div ng-repeat="message in currentUser.connectMessageUser.messages">
+          <div class="inbox-message">
+            <p>{{message.message}}</p>
+            <span>{{message.userid}}</span>
+          </div>
+        </div>
+      </div>
+      <textarea type="text" placeholder="Begin message..." class="inbox-message-input" ng-model="currentSendMessage"></textarea>
+      <div class="message-input-submit" ng-click="sendUserMessage(currentUser.id, currentUser.connectMessageUser.id, currentSendMessage); loadUserMessages(currentUser.connectMessageUser.id, currentUser.id)">Send</div>
+    </div>
+  </div>
+</section>
